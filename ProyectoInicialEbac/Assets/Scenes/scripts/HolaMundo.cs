@@ -7,7 +7,10 @@ public class HolaMundo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hola Mundo");   
+        print("algo paso");
+        Debug.Log("algo paso");
+        Debug.LogError("Algo salio muy mal");
+        Debug.LogWarning("Algo salio medianamente mal");
     }
 
     // Update is called once per frame
