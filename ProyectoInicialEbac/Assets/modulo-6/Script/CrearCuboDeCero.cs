@@ -64,9 +64,5 @@ public class CrearCuboDeCero : MonoBehaviour
         objToSpawn.transform.position = Vector3.one;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
