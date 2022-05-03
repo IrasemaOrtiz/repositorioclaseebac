@@ -8,6 +8,6 @@ public class Segundo : MonoBehaviour
     //COLOR RANDOM EN EL EVENTO UPDATE
     void Update()
     {
-        GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        GetComponent<MeshRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
     }
 }

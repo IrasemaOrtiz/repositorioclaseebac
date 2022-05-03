@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class GenerarUpdate : MonoBehaviour
 {
     public GameObject prefab;
-    // Start is called before the first frame update
+    float x;
+    float y;
+    float z;
+    Vector3 nuevaPosicion;
     void Update()
     {
-        for(var i = 0; i < 10; i++)
-        Instantiate(prefab, new Vector3(i * 2.0f, 0, 0), Quaternion.identity);
+        x = Random.Range(-5, 5);
+        y = 10;
+        z = Random.Range(-5, 5);
+        nuevaPosicion = new Vector3(x, y, z);
+        GameObject nuevo = Instantiate(prefab, nuevaPosicion, Quaternion.identity);
+        nuevo.GetComponent<MeshRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
     }
 
-   
 }
